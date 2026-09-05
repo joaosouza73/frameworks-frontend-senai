@@ -34,9 +34,22 @@ Desenvolvimento de uma aplicação Web utilizando **HTML, CSS e Vanilla JavaScri
 
 ---
 
-### Aula 02
+### Aula 02 — React
 
-*Atividade a ser adicionada.*
+Desenvolvimento de uma aplicação utilizando React, com versionamento do projeto através do Git e GitHub e publicação na Vercel.
+
+**Projeto:** Jogo da Velha
+
+**Tecnologias utilizadas:**
+- React
+- Vite
+- JavaScript
+- Git
+- GitHub
+- Vercel
+
+**Aplicação online:**  
+[**Acessar o Jogo da Velha**](https://jogo-da-velha-react-one.vercel.app/)
 
 ---
 
