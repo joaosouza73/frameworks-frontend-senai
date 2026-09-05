@@ -1,24 +1,79 @@
 # Frameworks Front-end — SENAI
 
-Repositório destinado às atividades da disciplina de **Frameworks Front-end** do curso de Análise e Desenvolvimento de Sistemas (ADS).
+Repositório destinado às atividades desenvolvidas na disciplina de **Frameworks Front-end** do curso de **Análise e Desenvolvimento de Sistemas (ADS) — SENAI**.
+
+Este repositório será utilizado para organizar os projetos, atividades e documentos desenvolvidos ao longo do semestre.
+
+---
 
 ## 📚 Atividades
 
 ### Aula 01 — Vanilla JavaScript
 
-Projeto desenvolvido utilizando:
+Desenvolvimento de uma aplicação Web utilizando **HTML, CSS e Vanilla JavaScript**, com integração ao GitHub e publicação da aplicação através da Vercel.
+
+**Projeto:** Controle Financeiro
+
+**Tecnologias utilizadas:**
 
 * HTML5
 * CSS3
 * JavaScript
+* Git
+* GitHub
+* Vercel
 
-O projeto consiste em um sistema de **Controle Financeiro**, permitindo cadastrar movimentações, visualizar entradas e saídas e acompanhar o saldo.
+**Aplicação online:**
+[**Acessar o projeto**](https://frameworks-frontend-joao.vercel.app)
 
-### 🌐 Aplicação online
+**Arquivos da atividade:**
 
-[**Acessar o projeto publicado na Vercel**](https://frameworks-frontend-joao.vercel.app)
+* [Resumo da Aula 01](./aula-01/resumo-aula-01.md)
+* [Projeto Vanilla JS](./aula-01/vanilla-js/)
+* [Relatório da Aula 01](./aula-01/relatorio-framework.pdf)
 
-### 📁 Estrutura do projeto
+---
+
+### Aula 02
+
+*Atividade a ser adicionada.*
+
+---
+
+### Aula 03
+
+*Atividade a ser adicionada.*
+
+---
+
+### Aula 04
+
+*Atividade a ser adicionada.*
+
+---
+
+### Aula 05
+
+*Atividade a ser adicionada.*
+
+---
+
+## 🛠️ Tecnologias
+
+As tecnologias utilizadas serão adicionadas conforme as atividades forem desenvolvidas durante o semestre.
+
+Atualmente:
+
+* HTML5
+* CSS3
+* JavaScript
+* Git
+* GitHub
+* Vercel
+
+---
+
+## 📁 Estrutura do Repositório
 
 ```text
 frameworks-frontend-senai/
@@ -36,10 +91,15 @@ frameworks-frontend-senai/
     └── relatorio-framework.pdf
 ```
 
+A estrutura será atualizada conforme novas aulas e atividades forem adicionadas ao repositório.
+
+---
+
 ## 👨‍💻 Autor
 
-João Victor Souza
+**João Victor Souza**
 
 ## 🎓 Curso
 
-Análise e Desenvolvimento de Sistemas — SENAI
+**Análise e Desenvolvimento de Sistemas (ADS)**
+**SENAI**
