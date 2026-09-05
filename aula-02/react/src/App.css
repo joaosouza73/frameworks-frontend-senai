@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 320px;
+}
+
+button {
+  font-family: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 720px;
+  text-align: center;
+}
+
+.cabecalho {
+  margin-bottom: 30px;
+}
+
+.subtitulo {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: #60a5fa;
+  margin-bottom: 10px;
+}
+
+.cabecalho h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.descricao {
+  color: #cbd5e1;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.placar {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 1fr;
+  gap: 15px;
+  align-items: stretch;
+  margin-bottom: 28px;
+}
+
+.jogador,
+.status {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 18px;
+  backdrop-filter: blur(8px);
+}
+
+.jogador {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.jogador span {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.jogador strong {
+  font-size: 32px;
+}
+
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.tabuleiro {
+  width: min(100%, 450px);
+  margin: 0 auto 28px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.celula {
+  aspect-ratio: 1;
+  border: none;
+  border-radius: 16px;
+  background: #f8fafc;
+  color: #0f172a;
+  font-size: clamp(48px, 10vw, 76px);
+  font-weight: bold;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.celula:hover:not(:disabled) {
+  transform: translateY(-3px);
+  background: #e2e8f0;
+}
+
+.celula:active {
+  transform: scale(0.97);
+}
+
+.celula-x {
+  color: #2563eb;
+}
+
+.celula-o {
+  color: #dc2626;
+}
+
+.acoes {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.botao {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 22px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    opacity 0.2s ease;
+}
+
+.botao:hover {
+  transform: translateY(-2px);
+}
+
+.botao:active {
+  transform: translateY(0);
+}
+
+.botao-principal {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.botao-secundario {
+  background: #334155;
+  color: #ffffff;
+}
+
+.rodape {
+  margin-top: 30px;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+@media (max-width: 650px) {
+  .cabecalho h1 {
+    font-size: 34px;
+  }
+
+  .descricao {
+    font-size: 14px;
+  }
+
+  .placar {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .status {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    min-height: 64px;
+  }
+
+  .jogador {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .app {
+    padding: 20px 14px;
+  }
+
+  .cabecalho h1 {
+    font-size: 30px;
+  }
+
+  .tabuleiro {
+    gap: 7px;
+  }
+
+  .celula {
+    border-radius: 12px;
+  }
+
+  .botao {
+    width: 100%;
+  }
+}
