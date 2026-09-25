@@ -53,20 +53,6 @@ Desenvolvimento de uma aplicação utilizando React, com versionamento do projet
 
 ---
 
-### Aula 07 — Frameworks CSS
-
-Desenvolvimento das atividades de CSS externo, Box Model, Flexbox e Tailwind CSS compilado via npm.
-
-**Projeto:** Café Aurora / Feito à Mão
-
-**Arquivos da atividade:**
-
-* [Documentação e instruções](./aula-07/frameworks-css/README.md)
-* [Página CSS externo e Flexbox](./aula-07/frameworks-css/index.html)
-* [Página Tailwind CSS](./aula-07/frameworks-css/tailwind.html)
-
----
-
 ### Aula 03
 
 *Atividade a ser adicionada.*
@@ -82,6 +68,20 @@ Desenvolvimento das atividades de CSS externo, Box Model, Flexbox e Tailwind CSS
 ### Aula 05
 
 *Atividade a ser adicionada.*
+
+---
+
+### Aula 07 — Frameworks CSS
+
+Desenvolvimento das atividades de CSS externo, Box Model, Flexbox e Tailwind CSS compilado via npm.
+
+**Projeto:** Café Aurora / Feito à Mão
+
+**Arquivos da atividade:**
+
+* [Documentação e instruções](./aula-07/frameworks-css/README.md)
+* [Página CSS externo e Flexbox](./aula-07/frameworks-css/index.html)
+* [Página Tailwind CSS](./aula-07/frameworks-css/tailwind.html)
 
 ---
 
