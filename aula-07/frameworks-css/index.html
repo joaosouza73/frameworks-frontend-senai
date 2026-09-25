@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Vitrine responsiva da cafeteria Aurora, criada para praticar CSS externo, Box Model e Flexbox.">
+  <title>Café Aurora | CSS e Flexbox</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Café Aurora, início"><span class="brand-mark">A</span><span>Café <b>Aurora</b></span></a>
+    <nav class="main-nav" aria-label="Navegação principal"><a class="nav-link nav-current" href="#cardapio">Cardápio</a><a class="nav-link" href="tailwind.html">Projeto Tailwind</a><a class="nav-link" href="#sobre">Nossa casa</a></nav>
+    <a class="header-cta" href="#cardapio">Conheça o cardápio <span>↗</span></a>
+  </header>
+  <main>
+    <section class="hero" id="sobre">
+      <div class="hero-copy"><p class="eyebrow"><span class="eyebrow-line"></span> CAFÉ DE ORIGEM · TORRA ARTESANAL</p><h1>Seu ritual<br>favorito começa <em>aqui.</em></h1><p class="hero-description">Uma pausa com café especial, ingredientes de verdade e aquele tempo que parece só seu.</p><div class="hero-actions"><a class="button-primary" href="#cardapio">Explorar cardápio <span>↓</span></a><span class="hero-note">Aberto todos os dias<br><b>8h — 20h</b></span></div></div>
+      <div class="hero-art" aria-label="Ilustração de uma xícara de café"><div class="sun-disc"></div><div class="art-label">FEITO COM CALMA<br><span>desde 2018</span></div><div class="coffee-cup"><div class="cup-rim"></div><div class="coffee-surface"><i></i><i></i></div><div class="cup-handle"></div><div class="cup-base"></div></div><div class="coffee-bean bean-one"></div><div class="coffee-bean bean-two"></div><div class="hero-stamp">100%<br><small>ARÁBICA</small></div><span class="hero-art-caption">Origem: Mantiqueira de Minas</span></div>
+    </section>
+    <section class="menu-section" id="cardapio"><div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> O QUE VAI SER HOJE?</p><h2>Feito para <em>saborear.</em></h2></div><p class="section-intro">Clássicos com um toque autoral.<br>Escolha seu próximo favorito.</p></div>
+      <div class="menu-grid">
+        <article class="menu-card"><span class="card-number">01</span><span class="item-icon">☕</span><div class="card-content"><h3>Espresso da casa</h3><p>Doçura natural, notas de chocolate e caramelo.</p></div><div class="card-bottom"><span class="item-tag">INTENSO</span><b>R$ 9</b></div></article>
+        <article class="menu-card"><span class="card-number">02</span><span class="item-icon">🥛</span><div class="card-content"><h3>Latte de baunilha</h3><p>Leite vaporizado, espresso e baunilha natural.</p></div><div class="card-bottom"><span class="item-tag">SUAVE</span><b>R$ 16</b></div></article>
+        <article class="menu-card"><span class="card-number">03</span><span class="item-icon">🧊</span><div class="card-content"><h3>Cold brew cítrico</h3><p>Extração lenta com um final fresco de laranja.</p></div><div class="card-bottom"><span class="item-tag">GELADO</span><b>R$ 18</b></div></article>
+        <article class="menu-card"><span class="card-number">04</span><span class="item-icon">🍵</span><div class="card-content"><h3>Matcha cremoso</h3><p>Matcha japonês batido na hora com leite.</p></div><div class="card-bottom"><span class="item-tag">ESPECIAL</span><b>R$ 19</b></div></article>
+        <article class="menu-card"><span class="card-number">05</span><span class="item-icon">🥐</span><div class="card-content"><h3>Folhado de manteiga</h3><p>Massa laminada por 24h, assada toda manhã.</p></div><div class="card-bottom"><span class="item-tag">DA CASA</span><b>R$ 14</b></div></article>
+        <article class="menu-card"><span class="card-number">06</span><span class="item-icon">🍰</span><div class="card-content"><h3>Bolo de laranja</h3><p>Receita de família com calda de laranja fresca.</p></div><div class="card-bottom"><span class="item-tag">AFETIVO</span><b>R$ 15</b></div></article>
+        <article class="menu-card"><span class="card-number">07</span><span class="item-icon">🍞</span><div class="card-content"><h3>Pão de fermentação</h3><p>Casca crocante, miolo leve e manteiga batida.</p></div><div class="card-bottom"><span class="item-tag">ARTESANAL</span><b>R$ 17</b></div></article>
+        <article class="menu-card"><span class="card-number">08</span><span class="item-icon">🍫</span><div class="card-content"><h3>Brownie 60%</h3><p>Chocolate intenso, interior úmido e flor de sal.</p></div><div class="card-bottom"><span class="item-tag">CACAU</span><b>R$ 13</b></div></article>
+        <article class="menu-card"><span class="card-number">09</span><span class="item-icon">🍋</span><div class="card-content"><h3>Torta de limão</h3><p>Creme aveludado, merengue tostado e limão siciliano.</p></div><div class="card-bottom"><span class="item-tag">CÍTRICO</span><b>R$ 16</b></div></article>
+        <article class="menu-card"><span class="card-number">10</span><span class="item-icon">🍪</span><div class="card-content"><h3>Cookie de pistache</h3><p>Bordas crocantes, centro macio e pistache.</p></div><div class="card-bottom"><span class="item-tag">FAVORITO</span><b>R$ 14</b></div></article>
+        <article class="menu-card"><span class="card-number">11</span><span class="item-icon">🫖</span><div class="card-content"><h3>Chá da estação</h3><p>Infusão botânica servida quente ou com gelo.</p></div><div class="card-bottom"><span class="item-tag">BOTÂNICO</span><b>R$ 12</b></div></article>
+        <article class="menu-card"><span class="card-number">12</span><span class="item-icon">🧋</span><div class="card-content"><h3>Mocha de avelã</h3><p>Chocolate, espresso duplo e creme de avelã.</p></div><div class="card-bottom"><span class="item-tag">CREMOSO</span><b>R$ 19</b></div></article>
+        <article class="menu-card"><span class="card-number">13</span><span class="item-icon">🍓</span><div class="card-content"><h3>Iogurte com frutas</h3><p>Iogurte natural, granola da casa e frutas do dia.</p></div><div class="card-bottom"><span class="item-tag">LEVE</span><b>R$ 21</b></div></article>
+        <article class="menu-card"><span class="card-number">14</span><span class="item-icon">🥪</span><div class="card-content"><h3>Toast de abacate</h3><p>Pão da casa, abacate, ovo e pimenta rosa.</p></div><div class="card-bottom"><span class="item-tag">BRUNCH</span><b>R$ 28</b></div></article>
+        <article class="menu-card"><span class="card-number">15</span><span class="item-icon">🥯</span><div class="card-content"><h3>Bagel de salmão</h3><p>Bagel tostado, cream cheese e salmão defumado.</p></div><div class="card-bottom"><span class="item-tag">BRUNCH</span><b>R$ 32</b></div></article>
+        <article class="menu-card"><span class="card-number">16</span><span class="item-icon">🥑</span><div class="card-content"><h3>Sanduíche caprese</h3><p>Tomate, muçarela fresca, pesto e rúcula.</p></div><div class="card-bottom"><span class="item-tag">VEGETARIANO</span><b>R$ 26</b></div></article>
+        <article class="menu-card"><span class="card-number">17</span><span class="item-icon">🍮</span><div class="card-content"><h3>Cheesecake de goiabada</h3><p>Base amanteigada, creme leve e goiabada cascão.</p></div><div class="card-bottom"><span class="item-tag">BRASILEIRO</span><b>R$ 18</b></div></article>
+        <article class="menu-card"><span class="card-number">18</span><span class="item-icon">🍯</span><div class="card-content"><h3>Granola com mel</h3><p>Castanhas tostadas, aveia, mel e iogurte.</p></div><div class="card-bottom"><span class="item-tag">NATURAL</span><b>R$ 20</b></div></article>
+        <article class="menu-card"><span class="card-number">19</span><span class="item-icon">🍎</span><div class="card-content"><h3>Crumble de maçã</h3><p>Maçãs com canela e farofa crocante de aveia.</p></div><div class="card-bottom"><span class="item-tag">QUENTINHO</span><b>R$ 17</b></div></article>
+        <article class="menu-card"><span class="card-number">20</span><span class="item-icon">🥤</span><div class="card-content"><h3>Suco do pomar</h3><p>Frutas frescas espremidas na hora, sem adição.</p></div><div class="card-bottom"><span class="item-tag">REFRESCANTE</span><b>R$ 15</b></div></article>
+      </div>
+    </section>
+    <section class="closing-banner"><div><p class="eyebrow"><span class="eyebrow-line"></span> UM BOM CAFÉ MUDA O DIA</p><h2>Guarde um tempo<br>para <em>você.</em></h2></div><a class="button-light" href="#cardapio">Voltar ao cardápio <span>↑</span></a></section>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="#"><span class="brand-mark">A</span><span>Café <b>Aurora</b></span></a><span>Feito com calma em São Paulo.</span><span>Projeto educacional · CSS externo e Flexbox</span></footer>
+</body>
+</html>

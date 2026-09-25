@@ -1,0 +1,18 @@
+{
+  "name": "cafe-aurora-css-frameworks",
+  "version": "1.0.0",
+  "description": "Atividades de CSS externo, Flexbox e Tailwind CSS v4.",
+  "scripts": {
+    "build": "tailwindcss -i ./src/tailwind.css -o ./dist/tailwind.css --minify",
+    "watch": "tailwindcss -i ./src/tailwind.css -o ./dist/tailwind.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  },
+  "private": true
+}

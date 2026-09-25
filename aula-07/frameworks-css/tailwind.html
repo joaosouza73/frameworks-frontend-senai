@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Página de apresentação construída com classes utilitárias do Tailwind CSS.">
+  <title>Feito à mão | Tailwind CSS</title>
+  <link rel="stylesheet" href="./dist/tailwind.css">
+</head>
+<body class="min-h-screen bg-[#f5f3ed] text-stone-900 antialiased">
+  <header class="border-b border-stone-200 bg-[#fffefa]">
+    <nav class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-5" aria-label="Navegação principal">
+      <a href="index.html" class="flex items-center gap-3 text-sm font-semibold tracking-tight"><span class="flex size-9 items-center justify-center rounded-full bg-emerald-900 font-serif text-lg text-white">F</span> feito à mão</a>
+      <div class="flex items-center gap-6 text-sm text-stone-600"><a class="transition hover:text-emerald-900" href="#pecas">Peças</a><a class="transition hover:text-emerald-900" href="#historia">Nossa história</a><a class="rounded-full bg-emerald-900 px-4 py-2 font-medium text-white transition hover:bg-emerald-800" href="#pecas">Ver coleção <span aria-hidden="true">↗</span></a></div>
+    </nav>
+  </header>
+  <main>
+    <section class="mx-auto grid max-w-6xl items-center gap-12 px-6 py-16 md:grid-cols-2 md:py-24">
+      <div>
+        <p class="mb-5 text-xs font-bold uppercase tracking-[0.2em] text-emerald-800">cerâmica autoral · coleção 2026</p>
+        <h1 class="max-w-xl font-serif text-5xl leading-[1.08] tracking-tight sm:text-6xl">Objetos para uma vida <span class="italic text-emerald-800">com mais presença.</span></h1>
+        <p class="mt-6 max-w-md text-base leading-7 text-stone-600">Feitas à mão, uma a uma. Peças que guardam as marcas do processo e encontram seu lugar na rotina.</p>
+        <div class="mt-8 flex flex-wrap items-center gap-4"><a class="rounded-full bg-emerald-900 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-emerald-800" href="#pecas">Descobrir as peças <span aria-hidden="true">→</span></a><span class="text-xs leading-5 text-stone-500">Pequenos lotes<br>produzidos no Brasil</span></div>
+        <div class="mt-12 flex gap-8 border-t border-stone-200 pt-5"><div><p class="text-xl font-semibold">100%</p><p class="text-xs text-stone-500">feito à mão</p></div><div><p class="text-xl font-semibold">12</p><p class="text-xs text-stone-500">peças por lote</p></div><div><p class="text-xl font-semibold">SP</p><p class="text-xs text-stone-500">feito no Brasil</p></div></div>
+      </div>
+      <div class="relative mx-auto w-full max-w-lg overflow-hidden rounded-[2rem] bg-[#d6d1c2] p-8 sm:p-12">
+        <div class="absolute -right-10 -top-10 size-48 rounded-full bg-[#e5b47c]/70"></div><div class="absolute left-6 top-6 rotate-[-12deg] rounded-full border border-stone-700/30 px-3 py-2 text-[10px] font-semibold uppercase tracking-widest text-stone-700">barro &amp; tempo</div>
+        <div class="relative flex aspect-[4/3] items-center justify-center">
+          <div class="absolute bottom-8 h-8 w-56 rounded-full bg-stone-800/15 blur-md"></div>
+          <div class="relative z-10 flex h-48 w-40 items-center justify-center rounded-b-[3.5rem] rounded-t-[2rem] border border-[#9c7651] bg-gradient-to-br from-[#d4ad80] via-[#c59466] to-[#a87953] shadow-xl sm:h-56 sm:w-48"><div class="absolute -top-3 h-7 w-full rounded-[50%] border-4 border-[#bd8d60] bg-[#76573e]"></div><div class="absolute -right-12 top-14 h-20 w-16 rounded-r-full border-[12px] border-l-0 border-[#b48760]"></div><div class="h-16 w-20 rounded-full bg-[#d9b288]/60 blur-lg"></div><div class="absolute bottom-7 h-2 w-24 rounded-full bg-[#e5c6a2]/50"></div></div>
+          <span class="absolute right-8 top-6 rotate-6 font-serif text-4xl text-stone-700/70">✳</span><span class="absolute bottom-7 right-9 font-serif text-2xl italic text-stone-700/65">nº 08</span>
+        </div>
+        <p class="relative z-10 mt-2 text-center text-xs font-medium tracking-wide text-stone-700">Caneca Terra · argila natural e esmalte fosco</p>
+      </div>
+    </section>
+    <section id="pecas" class="bg-[#fffefa] py-16 sm:py-20">
+      <div class="mx-auto max-w-6xl px-6">
+        <div class="mb-9 flex flex-wrap items-end justify-between gap-5"><div><p class="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-emerald-800">a coleção</p><h2 class="font-serif text-4xl tracking-tight">Peças que ficam.</h2></div><a class="text-sm font-semibold text-emerald-900 underline decoration-emerald-900/30 underline-offset-4" href="#historia">Conheça o processo <span aria-hidden="true">↗</span></a></div>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="group rounded-2xl border border-stone-200 bg-white p-3 transition hover:-translate-y-1 hover:shadow-lg"><div class="flex aspect-[4/3] items-center justify-center overflow-hidden rounded-xl bg-[#e6ddd0]"><div class="relative h-36 w-32 rounded-b-[2.5rem] rounded-t-2xl bg-gradient-to-br from-[#d4ad80] to-[#986b48] shadow-lg transition group-hover:scale-105"><div class="absolute -top-2 h-5 w-full rounded-full border-4 border-[#bd8d60] bg-[#72543e]"></div><div class="absolute -right-8 top-10 h-14 w-11 rounded-r-full border-[9px] border-l-0 border-[#a87953]"></div></div></div><div class="flex items-center justify-between gap-3 px-2 pb-2 pt-4"><div><h3 class="font-serif text-lg">Caneca Terra</h3><p class="mt-1 text-xs text-stone-500">argila natural · 280 ml</p></div><span class="text-sm font-semibold">R$ 128</span></div></article>
+          <article class="group rounded-2xl border border-stone-200 bg-white p-3 transition hover:-translate-y-1 hover:shadow-lg"><div class="flex aspect-[4/3] items-center justify-center overflow-hidden rounded-xl bg-[#e4e5dc]"><div class="relative h-28 w-44 rounded-b-[3rem] rounded-t-[1.3rem] bg-gradient-to-br from-[#87917c] to-[#53634f] shadow-lg transition group-hover:scale-105"><div class="absolute -top-2 h-5 w-full rounded-[50%] border-4 border-[#697762] bg-[#414c3c]"></div></div></div><div class="flex items-center justify-between gap-3 px-2 pb-2 pt-4"><div><h3 class="font-serif text-lg">Tigela Oliva</h3><p class="mt-1 text-xs text-stone-500">esmalte acetinado · 450 ml</p></div><span class="text-sm font-semibold">R$ 154</span></div></article>
+          <article class="group rounded-2xl border border-stone-200 bg-white p-3 transition hover:-translate-y-1 hover:shadow-lg"><div class="flex aspect-[4/3] items-center justify-center overflow-hidden rounded-xl bg-[#e7ded8]"><div class="relative flex h-36 w-36 items-center justify-center rounded-full bg-gradient-to-br from-[#c59b81] to-[#8f6651] shadow-lg transition group-hover:scale-105"><div class="h-20 w-20 rounded-full bg-[#e8d9ca] shadow-inner"></div><div class="absolute -bottom-1 h-4 w-20 rounded-[50%] bg-[#84604e]"></div></div></div><div class="flex items-center justify-between gap-3 px-2 pb-2 pt-4"><div><h3 class="font-serif text-lg">Prato Areia</h3><p class="mt-1 text-xs text-stone-500">grés de alta temperatura · 22 cm</p></div><span class="text-sm font-semibold">R$ 146</span></div></article>
+        </div>
+      </div>
+    </section>
+    <section id="historia" class="mx-auto grid max-w-6xl gap-8 px-6 py-16 md:grid-cols-[1fr_auto] md:items-center"><div><p class="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-emerald-800">feito no nosso ateliê</p><h2 class="font-serif text-3xl">Cada marca conta uma história.</h2><p class="mt-3 max-w-2xl text-sm leading-6 text-stone-600">Da escolha da argila à última queima, o processo é lento e intencional. Por isso, nenhuma peça é exatamente igual à outra.</p></div><a href="index.html" class="inline-flex items-center justify-center gap-3 rounded-full border border-stone-300 px-5 py-3 text-sm font-semibold transition hover:border-emerald-900 hover:text-emerald-900">Ver atividade de CSS <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="border-t border-stone-200 bg-[#fffefa]"><div class="mx-auto flex max-w-6xl flex-wrap justify-between gap-3 px-6 py-6 text-xs text-stone-500"><span>feito à mão · São Paulo, Brasil</span><span>Projeto educacional · Tailwind CSS</span></div></footer>
+</body>
+</html>
