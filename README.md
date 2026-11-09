@@ -132,7 +132,6 @@ Aplicação interativa de estudo sobre JSX, componentes, props, listas, atualiza
 * [Aplicação React](./aula-08/)
 
 ---
----
 
 ### Aula 09 — Projeto React 02
 
@@ -146,6 +145,7 @@ Aplicação React para consultar publicações via API, navegar entre páginas, 
 * [Aplicação React](./aula-09/)
 
 ---
+
 ## 🛠️ Tecnologias
 As tecnologias utilizadas serão adicionadas conforme as atividades forem desenvolvidas durante o semestre.
 
