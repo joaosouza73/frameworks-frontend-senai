@@ -19,6 +19,7 @@ Jogo da velha desenvolvido com React e Vite.
 
 - [Aplicação e documentação](./aula-02/react/)
 - [Resumo da aula](./aula-02/resumo-aula-02.md)
+- [Relatório técnico](./aula-02/relatorio-tecnico-react.docx)
 - [Aplicação publicada](https://jogo-da-velha-react-one.vercel.app/)
 
 ### Aula 03
