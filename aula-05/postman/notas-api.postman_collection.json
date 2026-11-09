@@ -1,0 +1,115 @@
+{
+  "info": {
+    "_postman_id": "6d4722ee-bf6d-468f-ad8a-78efeb3bf70e",
+    "name": "Aula 05 — API de notas",
+    "description": "Coleção para consultar, criar, atualizar e excluir notas. Defina base_url no ambiente ou na coleção. Crie uma nota antes de usar as requisições de detalhe, atualização e remoção; a requisição de criação salva seu ID automaticamente.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Listar notas",
+      "request": {
+        "method": "GET",
+        "header": [{ "key": "Accept", "value": "application/json" }],
+        "url": "{{base_url}}/api/notes",
+        "description": "Lista todas as notas, da alteração mais recente à mais antiga.\n\n**Resposta esperada:** `200 OK` com um array JSON. Se ainda não houver registros, retorna `[]`. Cada item contém `id`, `titulo`, `texto`, `criadoEm` e `atualizadoEm`."
+      },
+      "response": []
+    },
+    {
+      "name": "Criar nota",
+      "event": [{
+        "listen": "test",
+        "script": {
+          "type": "text/javascript",
+          "exec": [
+            "if (pm.response.code === 201) {",
+            "  const nota = pm.response.json();",
+            "  pm.collectionVariables.set('noteId', nota.id);",
+            "  console.log('ID salvo para as próximas requisições:', nota.id);",
+            "}"
+          ]
+        }
+      }],
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "Accept", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"titulo\": \"Ideia para o projeto\",\n  \"texto\": \"Anotar os próximos passos e organizar as referências.\"\n}",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": "{{base_url}}/api/notes",
+        "description": "Cria uma nota. Os campos `titulo` (1 a 120 caracteres) e `texto` (1 a 5.000 caracteres) são obrigatórios.\n\n**Resposta esperada:** `201 Created` com a nota criada, incluindo ID UUID e datas ISO 8601. Erros de validação retornam `400 Bad Request` com a descrição dos campos. A requisição salva o ID para detalhe, edição e remoção."
+      },
+      "response": []
+    },
+    {
+      "name": "Obter nota por ID",
+      "request": {
+        "method": "GET",
+        "header": [{ "key": "Accept", "value": "application/json" }],
+        "url": "{{base_url}}/api/notes/{{noteId}}",
+        "description": "Busca uma nota pelo ID salvo pela requisição **Criar nota**.\n\n**Resposta esperada:** `200 OK` com o objeto da nota. ID inexistente retorna `404 Not Found` e `{ \"erro\": \"Nota não encontrada.\" }`."
+      },
+      "response": []
+    },
+    {
+      "name": "Atualizar nota",
+      "request": {
+        "method": "PUT",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "Accept", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"titulo\": \"Ideia revisada\",\n  \"texto\": \"Atualizei os próximos passos para o projeto.\"\n}",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": "{{base_url}}/api/notes/{{noteId}}",
+        "description": "Substitui título e texto da nota identificada por `noteId`. Os dois campos são obrigatórios e seguem os mesmos limites da criação.\n\n**Resposta esperada:** `200 OK` com a nota atualizada e o campo `atualizadoEm` renovado. Nota inexistente retorna `404 Not Found`; campos inválidos retornam `400 Bad Request`."
+      },
+      "response": []
+    },
+    {
+      "name": "Excluir nota",
+      "event": [{
+        "listen": "test",
+        "script": {
+          "type": "text/javascript",
+          "exec": [
+            "if (pm.response.code === 204) {",
+            "  pm.collectionVariables.unset('noteId');",
+            "  console.log('Nota removida; crie outra nota para repetir o fluxo.');",
+            "}"
+          ]
+        }
+      }],
+      "request": {
+        "method": "DELETE",
+        "header": [{ "key": "Accept", "value": "application/json" }],
+        "url": "{{base_url}}/api/notes/{{noteId}}",
+        "description": "Remove a nota identificada por `noteId`.\n\n**Resposta esperada:** `204 No Content`, sem corpo, quando removida. Nota inexistente retorna `404 Not Found`. Após a remoção, o ID da coleção é apagado."
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:3000",
+      "type": "string",
+      "description": "URL base do servidor Express, sem barra no final."
+    },
+    {
+      "key": "noteId",
+      "value": "",
+      "type": "string",
+      "description": "Preenchido automaticamente pela requisição Criar nota."
+    }
+  ]
+}
