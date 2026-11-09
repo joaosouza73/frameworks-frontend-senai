@@ -125,3 +125,6 @@ button:focus-visible, input:focus-visible, textarea:focus-visible, a:focus-visib
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+.status-dot-offline { background: #e18d73; box-shadow: 0 0 0 4px #e18d7320; }
+.retry-button { margin-top: 7px; padding: 8px 12px; border: 1px solid #d6d8cc; border-radius: 7px; background: #fffefa; color: #394438; font-size: 11px; font-weight: 600; }
+.retry-button:hover { background: #e8eddf; }

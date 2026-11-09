@@ -32,6 +32,7 @@ function App() {
   const [search, setSearch] = useState('')
   const [isLoading, setIsLoading] = useState(true)
   const [isSaving, setIsSaving] = useState(false)
+  const [apiAvailable, setApiAvailable] = useState(null)
   const [error, setError] = useState('')
   const [notice, setNotice] = useState('')
 
@@ -40,7 +41,9 @@ function App() {
     setError('')
     try {
       setNotes(await notesApi.list())
+      setApiAvailable(true)
     } catch (requestError) {
+      setApiAvailable(false)
       setError(requestError.message)
     } finally {
       setIsLoading(false)
@@ -131,8 +134,8 @@ function App() {
         </button>
 
         <div className="sidebar-foot">
-          <span className="status-dot" aria-hidden="true" />
-          <span>Sincronizado com a API</span>
+          <span className={`status-dot ${apiAvailable === false ? 'status-dot-offline' : ''}`} aria-hidden="true" />
+          <span>{apiAvailable === true ? 'API conectada' : isLoading ? 'Conectando à API' : 'API indisponível'}</span>
         </div>
       </aside>
 
@@ -173,6 +176,12 @@ function App() {
 
             {isLoading ? (
               <div className="empty-state"><span className="loader" />Carregando suas notas...</div>
+            ) : apiAvailable === false ? (
+              <div className="empty-state">
+                <strong>Não foi possível carregar as notas</strong>
+                <span>Verifique se o servidor está disponível e tente novamente.</span>
+                <button className="retry-button" type="button" onClick={loadNotes}>Tentar novamente</button>
+              </div>
             ) : visibleNotes.length === 0 ? (
               <div className="empty-state">
                 <span className="empty-icon" aria-hidden="true">✳</span>
