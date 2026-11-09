@@ -21,6 +21,7 @@ Desenvolvimento de uma aplicação Web utilizando **HTML, CSS e Vanilla JavaScri
 * JavaScript
 * React
 * Vite
+* React Router
 * Git
 * GitHub
 * Vercel
@@ -119,8 +120,6 @@ Desenvolvimento das atividades de CSS externo, Box Model, Flexbox e Tailwind CSS
 
 ---
 
----
-
 ### Aula 08 — Projeto React
 
 Aplicação interativa de estudo sobre JSX, componentes, props, listas, atualização de interface e renderização condicional.
@@ -133,6 +132,20 @@ Aplicação interativa de estudo sobre JSX, componentes, props, listas, atualiza
 * [Aplicação React](./aula-08/)
 
 ---
+---
+
+### Aula 09 — Projeto React 02
+
+Aplicação React para consultar publicações via API, navegar entre páginas, ler detalhes e enviar conteúdo com formulário controlado.
+
+**Projeto:** Caderno Aberto
+
+**Arquivos da atividade:**
+
+* [Descrição, funcionalidades e conceitos](./aula-09/README.md)
+* [Aplicação React](./aula-09/)
+
+---
 ## 🛠️ Tecnologias
 As tecnologias utilizadas serão adicionadas conforme as atividades forem desenvolvidas durante o semestre.
 
@@ -143,6 +156,7 @@ Atualmente:
 * JavaScript
 * React
 * Vite
+* React Router
 * Git
 * GitHub
 * Vercel
