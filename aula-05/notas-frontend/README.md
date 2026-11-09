@@ -1,10 +1,26 @@
 # Front-end de notas
 
-Interface em React que consome a API Express da atividade. Configure `VITE_API_URL` com a URL base da API, sem barra final. Localmente, o padrão é `http://localhost:3000`.
+Interface em React que consome a API Express da atividade.
 
-```sh
+## Requisitos
+
+Node.js 20.19+ ou 22.12+ (Vite 8).
+
+## Executar localmente
+
+```powershell
 npm install
+Copy-Item .env.example .env.local
 npm run dev
 ```
 
-Para gerar os arquivos de publicação, use `npm run build`. A pasta de saída do Vite é `dist`.
+A configuração inicial aponta para `http://localhost:3000`. Para usar outra API, altere `VITE_API_URL` no `.env.local`. Variáveis `VITE_` são incluídas no código enviado ao navegador; não coloque segredos nelas.
+
+## Gerar a versão de publicação
+
+```sh
+npm run build
+npm run preview
+```
+
+Os arquivos gerados ficam em `dist/`.
