@@ -2,7 +2,7 @@
   "info": {
     "_postman_id": "6d4722ee-bf6d-468f-ad8a-78efeb3bf70e",
     "name": "Aula 05 — API de notas",
-    "description": "Coleção para consultar, criar, atualizar e excluir notas. Defina base_url no ambiente ou na coleção. Depois de criar uma nota, copie o campo id da resposta para a variável noteId antes de usar detalhe, atualização ou remoção.",
+    "description": "Coleção para consultar, criar, atualizar e excluir notas. O valor padrão de base_url aponta para a API de demonstração no Render; altere para http://localhost:3000 ao executar localmente. Depois de criar uma nota, copie o id da resposta para a variável noteId antes de usar detalhe, atualização ou remoção.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
@@ -111,7 +111,7 @@
   "variable": [
     {
       "key": "base_url",
-      "value": "http://localhost:3000",
+      "value": "https://aula05-notas-api.onrender.com",
       "type": "string",
       "description": "URL base do servidor Express, sem barra no final."
     },

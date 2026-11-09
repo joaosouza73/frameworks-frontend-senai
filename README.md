@@ -81,6 +81,8 @@ Aplicação de notas com API REST em Express, front-end React e persistência lo
 * [API Express](./aula-05/notas-api/)
 * [Aplicação React](./aula-05/notas-frontend/)
 * [Coleção Postman](./aula-05/postman/notas-api.postman_collection.json)
+* [Aplicação publicada na Vercel](https://notas-frontend-sigma.vercel.app/)
+* [API publicada no Render](https://aula05-notas-api.onrender.com/)
 
 ---
 

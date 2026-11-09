@@ -74,7 +74,7 @@ O título aceita até 120 caracteres; o texto, até 5.000. Cada registro inclui 
 
 ## Coleção Postman
 
-Importe [`postman/notas-api.postman_collection.json`](./postman/notas-api.postman_collection.json) em **Import > File**. A variável `base_url` vem preenchida para uso local. Para usar uma API publicada, altere-a para a URL do serviço. Execute **Criar nota**, copie o `id` da resposta para `noteId` e use esse valor nas requisições de detalhe, atualização e exclusão. A coleção descreve as respostas esperadas e os erros por operação.
+Importe [`postman/notas-api.postman_collection.json`](./postman/notas-api.postman_collection.json) em **Import > File**. A variável `base_url` vem preenchida com a API publicada. Para uso local, altere-a para `http://localhost:3000`. Execute **Criar nota**, copie o `id` da resposta para `noteId` e use esse valor nas requisições de detalhe, atualização e exclusão. A coleção descreve as respostas esperadas e os erros por operação.
 
 ## Publicação
 
@@ -96,6 +96,12 @@ O arquivo JSON atende à atividade local e a uma demonstração simples. O Rende
 
 **Por que não concentrar tudo em `server.js`?** Misturar transporte HTTP, validação, regra de negócio e arquivos dificulta encontrar falhas e evoluir partes sem afetar as demais. Aqui `server.js` configura servidor e middlewares, `src/routes/notes.routes.js` trata HTTP e valida entradas, e `src/storage/notes.repository.js` concentra o acesso ao JSON. O cliente HTTP fica em `notas-frontend/src/api.js` e os estados da interface ficam em `App.jsx`.
 
-## Links e registro
+## Links publicados
 
-O repositório da disciplina está em [frameworks-frontend-senai](https://github.com/joaosouza73/frameworks-frontend-senai). Depois de importar a coleção, use **Share** no Postman para gerar um link de compartilhamento. Os links do Render e da Vercel e as capturas da API, da interface e dos painéis devem ser adicionados depois que os serviços forem criados e publicados nas contas de hospedagem.
+- Aplicação React na Vercel: [notas-frontend-sigma.vercel.app](https://notas-frontend-sigma.vercel.app/)
+- API Express no Render: [aula05-notas-api.onrender.com](https://aula05-notas-api.onrender.com/)
+- Endpoint de notas: [GET /api/notes](https://aula05-notas-api.onrender.com/api/notes)
+- Repositório da disciplina: [frameworks-frontend-senai](https://github.com/joaosouza73/frameworks-frontend-senai)
+- Coleção Postman para importar: [notas-api.postman_collection.json](https://github.com/joaosouza73/frameworks-frontend-senai/blob/main/aula-05/postman/notas-api.postman_collection.json)
+
+O serviço Render está no plano gratuito; pode levar cerca de 50 segundos ou mais para responder após um período sem tráfego. O arquivo de notas não tem disco persistente e serve apenas para demonstração. A interface está publicada com a URL da API configurada; a variável `ALLOWED_ORIGINS` do Render limita a leitura via navegador à origem da Vercel. A API continua sem autenticação, então não guarde dados privados nela.
