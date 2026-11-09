@@ -20,7 +20,7 @@ export default function AppLayout() {
   }, [pathname])
 
   return (
-    <div className="app-shell">
+    <div id="topo" className="app-shell">
       <header className="site-header">
         <div className="site-width header-inner">
           <Link className="brand" to="/" aria-label="Caderno Aberto, página inicial">
