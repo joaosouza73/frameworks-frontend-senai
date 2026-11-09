@@ -74,14 +74,14 @@ function App() {
     setError('')
     setNotice('')
     try {
-      if (editingId) {
+      const wasEditing = Boolean(editingId)
+      if (wasEditing) {
         await notesApi.update(editingId, draft)
-        setNotice('Nota atualizada.')
       } else {
         await notesApi.create(draft)
-        setNotice('Nota criada.')
       }
       beginNewNote()
+      setNotice(wasEditing ? 'Nota atualizada.' : 'Nota criada.')
       await loadNotes()
     } catch (requestError) {
       setError(requestError.message)
@@ -242,3 +242,4 @@ function App() {
 }
 
 export default App
+
