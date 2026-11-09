@@ -21,6 +21,11 @@ function NoteIcon() {
 }
 
 function App() {
+  const todayLabel = new Intl.DateTimeFormat('pt-BR', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+  }).format(new Date()).toLocaleUpperCase('pt-BR')
   const [notes, setNotes] = useState([])
   const [draft, setDraft] = useState({ titulo: '', texto: '' })
   const [editingId, setEditingId] = useState(null)
@@ -134,7 +139,7 @@ function App() {
       <section className="main-content" id="inicio">
         <header className="page-heading">
           <div>
-            <span className="eyebrow">SEGUNDA-FEIRA, UM BOM DIA PARA COMEÇAR</span>
+            <span className="eyebrow">{todayLabel} · UM BOM DIA PARA COMEÇAR</span>
             <h2>Suas notas</h2>
             <p>Um lugar tranquilo para organizar as ideias.</p>
           </div>
