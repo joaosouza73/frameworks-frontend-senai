@@ -86,6 +86,23 @@ Aplicação de notas com API REST em Express, front-end React e persistência lo
 
 ---
 
+### Aula 06 — Projetos Front-End
+
+Planejamento do Projeto Integrador com backlog priorizado, estimativas, Sprints, fluxo Kanban, branches e critérios de conclusão.
+
+**Proposta usada:** painel web para organização de atividades acadêmicas. O escopo é uma referência ajustável pela equipe, pois o enunciado não informa o tema escolhido pelo grupo.
+
+**Arquivos da atividade:**
+
+* [Plano de gestão](./aula-06/README.md)
+* [Backlog](./aula-06/backlog.md)
+* [Planejamento das Sprints](./aula-06/sprints.md)
+* [Fluxo Kanban e branches](./aula-06/fluxo-kanban.md)
+* [Critérios de conclusão](./aula-06/criterios-de-conclusao.md)
+* [Quadro no GitHub Projects](https://github.com/users/joaosouza73/projects/2)
+
+---
+
 ### Aula 07 — Frameworks CSS
 
 Desenvolvimento das atividades de CSS externo, Box Model, Flexbox e Tailwind CSS compilado via npm.
