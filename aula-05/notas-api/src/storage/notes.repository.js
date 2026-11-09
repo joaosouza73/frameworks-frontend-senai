@@ -20,12 +20,17 @@ async function ensureStore() {
   }
 }
 
-async function readStoredNotes() {
+async function readNotesFile() {
   await ensureStore()
   const contents = await readFile(storePath, 'utf8')
   const notes = JSON.parse(contents)
   if (!Array.isArray(notes)) throw new Error('O arquivo de notas precisa conter uma lista JSON.')
   return notes
+}
+
+async function readStoredNotes() {
+  await writeQueue
+  return readNotesFile()
 }
 
 async function saveNotes(notes) {
@@ -36,7 +41,7 @@ async function saveNotes(notes) {
 
 function transact(change) {
   const operation = writeQueue.then(async () => {
-    const notes = await readStoredNotes()
+    const notes = await readNotesFile()
     const result = change(notes)
     if (result.persist !== false) await saveNotes(notes)
     return result.value
@@ -91,3 +96,4 @@ export function removeNote(id) {
     return { value: true }
   })
 }
+
