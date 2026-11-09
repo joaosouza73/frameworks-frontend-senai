@@ -1,0 +1,8 @@
+{
+  "name": "aula-04-api-data-hora",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "start": "node api.js", "dev": "node --watch api.js" },
+  "dependencies": { "cors": "^2.8.5", "express": "^5.1.0" }
+}

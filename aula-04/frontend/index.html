@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#102d25" />
+    <title>Relógio conectado à API</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./config.js"></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main class="painel">
+      <div class="etiqueta"><span class="ponto"></span> CONEXÃO COM API REST</div>
+      <h1>Data e hora, <em>em tempo real.</em></h1>
+      <p class="introducao">O horário abaixo é consultado em uma API Express e atualizado automaticamente.</p>
+      <section class="cartao" aria-live="polite">
+        <p class="rotulo">HORÁRIO ATUAL · UTC</p>
+        <time id="hora">--:--:--</time>
+        <p id="data">Aguardando consulta à API</p>
+        <div class="divisor"></div>
+        <p id="conexao" class="conexao">Conectando...</p>
+      </section>
+      <button id="atualizar" type="button">Consultar agora <span aria-hidden="true">↗</span></button>
+      <p class="nota">Consulta automática a cada 30 segundos</p>
+    </main>
+  </body>
+</html>

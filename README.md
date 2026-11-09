@@ -59,9 +59,15 @@ Desenvolvimento de uma aplicação utilizando React, com versionamento do projet
 
 ---
 
-### Aula 04
+### Aula 04 — Consumindo APIs no Front-end
 
-*Atividade a ser adicionada.*
+Pesquisa de dez aplicações que consomem APIs e desenvolvimento de uma API REST com Express e interface consumidora.
+
+**Arquivos da atividade:**
+
+* [Documentação, pesquisa e instruções](./aula-04/README.md)
+* [API Express](./aula-04/api/)
+* [Front-end](./aula-04/frontend/)
 
 ---
 
