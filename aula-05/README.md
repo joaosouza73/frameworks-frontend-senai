@@ -84,7 +84,7 @@ As duas pastas são projetos distintos dentro deste repositório; cada plataform
 
 **Vercel — front-end:** importe o mesmo repositório como outro projeto e defina Root Directory como `aula-05/notas-frontend`. Use `npm run build` como Build Command, `dist` como Output Directory e defina `VITE_API_URL` com a URL base do serviço Render. Publique o front-end depois de ajustar a configuração da API; então atualize `ALLOWED_ORIGINS` no Render com a URL Vercel final.
 
-O arquivo JSON atende à atividade local e a uma demonstração simples. Em hospedagem, confirme que o armazenamento de arquivos do serviço é persistente antes de usar a aplicação com dados que precisam sobreviver a reinicializações. Se houver um volume persistente, `NOTES_FILE` pode apontar para o caminho montado. A API não tem login ou separação de notas por usuário; use somente conteúdo de demonstração enquanto não houver autenticação e autorização.
+O arquivo JSON atende à atividade local e a uma demonstração simples. O Render usa armazenamento efêmero por padrão: alterações locais podem ser perdidas quando o serviço reinicia ou recebe um novo deploy. Para preservar o arquivo, conecte um disco persistente pago e defina `NOTES_FILE` com o caminho do arquivo dentro do ponto de montagem; o disco fica vinculado a uma única instância. Consulte a [documentação de discos persistentes do Render](https://render.com/docs/disks). Para produção ou múltiplas instâncias, prefira um banco de dados. A API não tem login ou separação de notas por usuário; use somente conteúdo de demonstração enquanto não houver autenticação e autorização.
 
 ## Questões para refletir
 
