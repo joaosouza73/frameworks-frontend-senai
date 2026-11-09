@@ -71,9 +71,16 @@ Pesquisa de dez aplicações que consomem APIs e desenvolvimento de uma API REST
 
 ---
 
-### Aula 05
+### Aula 05 — Criando APIs para o Front-end
 
-*Atividade a ser adicionada.*
+Aplicação de notas com API REST em Express, front-end React e persistência local em JSON.
+
+**Arquivos da atividade:**
+
+* [Documentação, rotas, reflexão e deploy](./aula-05/README.md)
+* [API Express](./aula-05/notas-api/)
+* [Aplicação React](./aula-05/notas-frontend/)
+* [Coleção Postman](./aula-05/postman/notas-api.postman_collection.json)
 
 ---
 
