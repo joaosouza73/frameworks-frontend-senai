@@ -1,195 +1,103 @@
 # Frameworks Front-end — SENAI
 
-Repositório destinado às atividades desenvolvidas na disciplina de **Frameworks Front-end** do curso de **Análise e Desenvolvimento de Sistemas (ADS) — SENAI**.
+Repositório das atividades da disciplina de **Frameworks Front-end** do curso de **Análise e Desenvolvimento de Sistemas (ADS) — SENAI**. Os projetos estão organizados por aula; cada pasta contém o código e, quando aplicável, sua documentação.
 
-Este repositório será utilizado para organizar os projetos, atividades e documentos desenvolvidos ao longo do semestre.
-
----
-
-## 📚 Atividades
+## Atividades
 
 ### Aula 01 — Vanilla JavaScript
 
-Desenvolvimento de uma aplicação Web utilizando **HTML, CSS e Vanilla JavaScript**, com integração ao GitHub e publicação da aplicação através da Vercel.
+Aplicação de controle financeiro feita com HTML, CSS e JavaScript.
 
-**Projeto:** Controle Financeiro
-
-**Tecnologias utilizadas:**
-
-* HTML5
-* CSS3
-* JavaScript
-* React
-* Vite
-* React Router
-* Git
-* GitHub
-* Vercel
-
-**Aplicação online:**
-[**Acessar o projeto**](https://frameworks-frontend-joao.vercel.app)
-
-**Arquivos da atividade:**
-
-* [Resumo da Aula 01](./aula-01/resumo-aula-01.md)
-* [Projeto Vanilla JS](./aula-01/vanilla-js/)
-* [Relatório da Aula 01](./aula-01/relatorio-framework.pdf)
-
----
+- [Projeto e arquivos](./aula-01/vanilla-js/)
+- [Resumo da aula](./aula-01/resumo-aula-01.md)
+- [Relatório](./aula-01/relatorio-frameworks.docx)
+- [Aplicação publicada](https://frameworks-frontend-joao.vercel.app)
 
 ### Aula 02 — React
 
-Desenvolvimento de uma aplicação utilizando React, com versionamento do projeto através do Git e GitHub e publicação na Vercel.
+Jogo da velha desenvolvido com React e Vite.
 
-**Projeto:** Jogo da Velha
-
-**Tecnologias utilizadas:**
-- React
-- Vite
-- JavaScript
-- Git
-- GitHub
-- Vercel
-
-**Aplicação online:**  
-[**Acessar o Jogo da Velha**](https://jogo-da-velha-react-one.vercel.app/)
-
----
+- [Aplicação e documentação](./aula-02/react/)
+- [Resumo da aula](./aula-02/resumo-aula-02.md)
+- [Aplicação publicada](https://jogo-da-velha-react-one.vercel.app/)
 
 ### Aula 03
 
-*Atividade a ser adicionada.*
-
----
+Atividade ainda sem arquivos neste repositório.
 
 ### Aula 04 — Consumindo APIs no Front-end
 
-Pesquisa de dez aplicações que consomem APIs e desenvolvimento de uma API REST com Express e interface consumidora.
+Pesquisa de aplicações que consomem APIs e desenvolvimento de uma API REST com uma interface consumidora.
 
-**Arquivos da atividade:**
-
-* [Documentação, pesquisa e instruções](./aula-04/README.md)
-* [API Express](./aula-04/api/)
-* [Front-end](./aula-04/frontend/)
-
----
+- [Documentação da atividade](./aula-04/README.md)
+- [API Express](./aula-04/api/)
+- [Front-end](./aula-04/frontend/)
 
 ### Aula 05 — Criando APIs para o Front-end
 
-Aplicação de notas com API REST em Express, front-end React e persistência local em JSON.
+Aplicação de notas com API REST em Express, front-end React, persistência em JSON e coleção para chamadas da API.
 
-**Arquivos da atividade:**
-
-* [Documentação, rotas, reflexão e deploy](./aula-05/README.md)
-* [API Express](./aula-05/notas-api/)
-* [Aplicação React](./aula-05/notas-frontend/)
-* [Coleção Postman](./aula-05/postman/notas-api.postman_collection.json)
-* [Aplicação publicada na Vercel](https://notas-frontend-sigma.vercel.app/)
-* [API publicada no Render](https://aula05-notas-api.onrender.com/)
-
----
+- [Documentação, rotas e deploy](./aula-05/README.md)
+- [API Express](./aula-05/notas-api/)
+- [Aplicação React](./aula-05/notas-frontend/)
+- [Coleção Postman](./aula-05/postman/notas-api.postman_collection.json)
+- [Front-end publicado na Vercel](https://notas-frontend-sigma.vercel.app/)
+- [API publicada no Render](https://aula05-notas-api.onrender.com/)
 
 ### Aula 06 — Projetos Front-End
 
-Planejamento do Projeto Integrador com backlog priorizado, estimativas, Sprints, fluxo Kanban, branches e critérios de conclusão.
+Planejamento do Projeto Integrador com backlog priorizado, estimativas, Sprints, Kanban, branches e critérios de conclusão. A proposta documentada é um painel para organizar atividades acadêmicas e pode ser ajustada ao tema da equipe.
 
-**Proposta usada:** painel web para organização de atividades acadêmicas. O escopo é uma referência ajustável pela equipe, pois o enunciado não informa o tema escolhido pelo grupo.
-
-**Arquivos da atividade:**
-
-* [Plano de gestão](./aula-06/README.md)
-* [Backlog](./aula-06/backlog.md)
-* [Planejamento das Sprints](./aula-06/sprints.md)
-* [Fluxo Kanban e branches](./aula-06/fluxo-kanban.md)
-* [Critérios de conclusão](./aula-06/criterios-de-conclusao.md)
-* [Quadro no GitHub Projects](https://github.com/users/joaosouza73/projects/2)
-
----
+- [Plano da atividade](./aula-06/README.md)
+- [Backlog](./aula-06/backlog.md)
+- [Planejamento das Sprints](./aula-06/sprints.md)
+- [Fluxo Kanban e branches](./aula-06/fluxo-kanban.md)
+- [Critérios de conclusão](./aula-06/criterios-de-conclusao.md)
+- [Quadro de trabalho no GitHub Projects](https://github.com/users/joaosouza73/projects/2)
 
 ### Aula 07 — Frameworks CSS
 
-Desenvolvimento das atividades de CSS externo, Box Model, Flexbox e Tailwind CSS compilado via npm.
+Atividades de CSS externo, Box Model, Flexbox e Tailwind CSS compilado via npm. Projeto visual: Café Aurora / Feito à Mão.
 
-**Projeto:** Café Aurora / Feito à Mão
-
-**Arquivos da atividade:**
-
-* [Documentação e instruções](./aula-07/frameworks-css/README.md)
-* [Página CSS externo e Flexbox](./aula-07/frameworks-css/index.html)
-* [Página Tailwind CSS](./aula-07/frameworks-css/tailwind.html)
-
----
+- [Documentação e instruções](./aula-07/frameworks-css/README.md)
+- [Página CSS e Flexbox](./aula-07/frameworks-css/index.html)
+- [Página Tailwind CSS](./aula-07/frameworks-css/tailwind.html)
 
 ### Aula 08 — Projeto React
 
-Aplicação interativa de estudo sobre JSX, componentes, props, listas, atualização de interface e renderização condicional.
+Catálogo interativo de conceitos React: JSX, componentes, props, Virtual DOM, listas, chaves, filtros, estado e renderização condicional.
 
-**Projeto:** React em prática — Guia interativo
-
-**Arquivos da atividade:**
-
-* [Descrição, funcionalidades e conceitos](./aula-08/README.md)
-* [Aplicação React](./aula-08/)
-
----
+- [Descrição, funcionalidades e conceitos](./aula-08/README.md)
+- [Aplicação React](./aula-08/)
 
 ### Aula 09 — Projeto React 02
 
-Aplicação React para consultar publicações via API, navegar entre páginas, ler detalhes e enviar conteúdo com formulário controlado.
+**Caderno Aberto**, uma aplicação React para consultar publicações e comentários, buscar conteúdo, abrir detalhes por rota e enviar uma nova publicação por formulário controlado.
 
-**Projeto:** Caderno Aberto
+- [Guia completo: instalação, rotas, API e conceitos](./aula-09/README.md)
+- [Aplicação React](./aula-09/)
 
-**Arquivos da atividade:**
+O envio POST usa uma API de demonstração: ela retorna uma resposta simulada e não grava o conteúdo permanentemente. A interface informa essa limitação.
 
-* [Descrição, funcionalidades e conceitos](./aula-09/README.md)
-* [Aplicação React](./aula-09/)
+## Tecnologias
 
----
+Ao longo das atividades, são utilizados HTML5, CSS3, JavaScript, React, Vite, React Router, Node.js, Express, npm, Git e GitHub. As atividades publicadas também usam Vercel e Render.
 
-## 🛠️ Tecnologias
-As tecnologias utilizadas serão adicionadas conforme as atividades forem desenvolvidas durante o semestre.
-
-Atualmente:
-
-* HTML5
-* CSS3
-* JavaScript
-* React
-* Vite
-* React Router
-* Git
-* GitHub
-* Vercel
-
----
-
-## 📁 Estrutura do Repositório
+## Estrutura
 
 ```text
 frameworks-frontend-senai/
-│
-├── .gitignore
 ├── README.md
-│
-└── aula-01/
-    ├── vanilla-js/
-    │   ├── index.html
-    │   ├── style.css
-    │   └── script.js
-    │
-    ├── resumo-aula-01.md
-    └── relatorio-framework.pdf
+├── aula-01/          # Controle financeiro com JavaScript
+├── aula-02/          # Jogo da velha com React
+├── aula-04/          # API Express e interface consumidora
+├── aula-05/          # API de notas, front-end e coleção Postman
+├── aula-06/          # Plano, backlog, Sprints e fluxo Kanban
+├── aula-07/          # CSS, Flexbox e Tailwind
+├── aula-08/          # Catálogo interativo de conceitos React
+└── aula-09/          # Caderno Aberto: API, formulários e rotas
 ```
 
-A estrutura será atualizada conforme novas aulas e atividades forem adicionadas ao repositório.
+## Autor e curso
 
----
-
-## 👨‍💻 Autor
-
-**João Victor Souza**
-
-## 🎓 Curso
-
-**Análise e Desenvolvimento de Sistemas (ADS)**
-**SENAI**
+João Victor Souza — Análise e Desenvolvimento de Sistemas (ADS), SENAI.
