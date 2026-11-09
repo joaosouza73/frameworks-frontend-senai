@@ -14,8 +14,6 @@ export default function HomePage() {
 
   useEffect(() => {
     const controller = new AbortController()
-    setStatus('loading')
-    setError('')
 
     getPosts({ signal: controller.signal })
       .then((data) => {
@@ -39,6 +37,12 @@ export default function HomePage() {
 
   function handleSearch(event) {
     event.preventDefault()
+  }
+
+  function retryLoading() {
+    setStatus('loading')
+    setError('')
+    setReloadKey((key) => key + 1)
   }
 
   return (
@@ -89,7 +93,7 @@ export default function HomePage() {
         </div>
 
         {status === 'loading' && <LoadingState label="Buscando publicações na API..." />}
-        {status === 'error' && <ErrorState message={error} onRetry={() => setReloadKey((key) => key + 1)} />}
+        {status === 'error' && <ErrorState message={error} onRetry={retryLoading} />}
         {status === 'success' && filteredPosts.length > 0 && (
           <div className="post-grid">
             {filteredPosts.map((post, index) => <PostCard key={post.id} post={post} index={index} />)}

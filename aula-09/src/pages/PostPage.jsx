@@ -10,13 +10,10 @@ export default function PostPage() {
   const [comments, setComments] = useState([])
   const [status, setStatus] = useState('loading')
   const [error, setError] = useState('')
+  const [loadedPostId, setLoadedPostId] = useState(null)
 
   useEffect(() => {
     const controller = new AbortController()
-    setStatus('loading')
-    setPost(null)
-    setComments([])
-    setError('')
 
     Promise.all([
       getPost(postId, { signal: controller.signal }),
@@ -24,22 +21,26 @@ export default function PostPage() {
     ])
       .then(([postData, commentData]) => {
         if (!postData.id) {
+          setLoadedPostId(postId)
           setStatus('not-found')
           return
         }
         setPost(postData)
         setComments(commentData)
+        setLoadedPostId(postId)
         setStatus('success')
       })
       .catch((requestError) => {
         if (controller.signal.aborted) return
         setError(requestError.message)
+        setLoadedPostId(postId)
         setStatus('error')
       })
 
     return () => controller.abort()
   }, [postId])
 
+  if (loadedPostId !== postId) return <LoadingState label="Abrindo publicação..." />
   if (status === 'loading') return <LoadingState label="Abrindo publicação..." />
   if (status === 'error') return <ErrorState message={error} />
 
