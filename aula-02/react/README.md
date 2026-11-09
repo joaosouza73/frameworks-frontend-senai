@@ -1,16 +1,59 @@
-# React + Vite
+# Aula 02 — Jogo da Velha
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Jogo para duas pessoas desenvolvido com React e Vite. Os jogadores alternam entre X e O no mesmo tabuleiro; a aplicação acompanha as vitórias e identifica empate.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Tabuleiro 3 × 3 para partidas entre duas pessoas.
+- Alternância automática entre X e O.
+- Identificação de vitória e empate.
+- Placar de vitórias durante a sessão.
+- Ações para iniciar outra partida ou zerar o placar.
+- Interface adaptável a telas menores.
+- Mensagens do jogo anunciadas por tecnologia assistiva.
 
-## React Compiler
+## Conceitos de React utilizados
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `useState` controla o tabuleiro, jogador atual, resultado e placar.
+- Componentes React descrevem e atualizam as partes da interface.
+- Eventos `onClick` recebem as jogadas e os pedidos de reinício.
+- `map()` renderiza as nove casas do tabuleiro com `key` estável por posição.
+- Renderização condicional apresenta o marcador, o próximo jogador, vitória ou empate.
 
-## Expanding the ESLint configuration
+## Executar localmente
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Requisitos: Node.js compatível com a versão do Vite do projeto e npm.
+
+```bash
+npm install
+npm run dev
+```
+
+O Vite informa o endereço local para abrir no navegador.
+
+## Outros comandos
+
+```bash
+npm run build
+npm run preview
+npm run lint
+```
+
+## Estrutura
+
+```text
+react/
+├── public/
+├── src/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+## Aplicação publicada
+
+[Abrir o Jogo da Velha](https://jogo-da-velha-react-one.vercel.app/)

@@ -103,7 +103,7 @@ function App() {
             <strong>{vitorias.X}</strong>
           </div>
 
-          <div className="status">
+          <div className="status" role="status" aria-live="polite">
             <span>{mensagemStatus()}</span>
           </div>
 
@@ -119,7 +119,8 @@ function App() {
               key={index}
               className={`celula ${celula ? `celula-${celula.toLowerCase()}` : ''}`}
               onClick={() => jogar(index)}
-              aria-label={`Casa ${index + 1}`}
+              disabled={Boolean(celula) || Boolean(vencedor) || empate}
+              aria-label={`Casa ${index + 1}, ${celula ? `ocupada por ${celula}` : 'vazia'}`}
             >
               {celula}
             </button>
