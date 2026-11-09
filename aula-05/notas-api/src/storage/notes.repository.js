@@ -53,7 +53,7 @@ function transact(change) {
 export async function listNotes() {
   await writeQueue
   const notes = await readStoredNotes()
-  return notes.sort((left, right) => right.updatedAt.localeCompare(left.updatedAt))
+  return notes.sort((left, right) => right.atualizadoEm.localeCompare(left.atualizadoEm))
 }
 
 export async function findNote(id) {
@@ -96,4 +96,5 @@ export function removeNote(id) {
     return { value: true }
   })
 }
+
 
