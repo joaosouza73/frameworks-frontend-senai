@@ -6,13 +6,13 @@ O **Ritmo** reúne tarefas de diferentes disciplinas em uma agenda simples. As q
 
 ## Entregas
 
-| Projeto | Pasta | Tecnologia | Organização da interface |
-|---|---|---|---|
-| 01 | [`react-agenda`](./react-agenda/) | React e Vite | Componentes funcionais, props, hooks e estado local. |
-| 02 | [`vue-agenda`](./vue-agenda/) | Vue e Vite | Single-File Components, Composition API, `ref`, `computed` e eventos. |
-| 03 | [`angular-agenda`](./angular-agenda/) | Angular | Componentes standalone, templates, `@Input`, `@Output` e signals. |
-| 04 | [`next-agenda`](./next-agenda/) | Next.js e React | App Router, layout, metadados e componentes cliente. |
-| 05 | [`projeto-05-copia`](./projeto-05-copia/) | React e Vite | Cópia de uma aplicação pública de tarefas, com fonte e licença preservadas. |
+| Projeto | Pasta | Tecnologia | Organização da interface | Repositório GitHub |
+|---|---|---|---|---|
+| 01 | [`react-agenda`](./react-agenda/) | React e Vite | Componentes funcionais, props, hooks e estado local. | [aula-03-react](https://github.com/joaosouza73/aula-03-react) |
+| 02 | [`vue-agenda`](./vue-agenda/) | Vue e Vite | Single-File Components, Composition API, `ref`, `computed` e eventos. | [aula-03-vue](https://github.com/joaosouza73/aula-03-vue) |
+| 03 | [`angular-agenda`](./angular-agenda/) | Angular | Componentes standalone, templates, `@Input`, `@Output` e signals. | [aula-03-angular](https://github.com/joaosouza73/aula-03-angular) |
+| 04 | [`next-agenda`](./next-agenda/) | Next.js e React | App Router, layout, metadados e componentes cliente. | [aula-03-nextjs](https://github.com/joaosouza73/aula-03-nextjs) |
+| 05 | [`projeto-05-copia`](./projeto-05-copia/) | React e Vite | Cópia de uma aplicação pública de tarefas, com fonte e licença preservadas. | [aula-03-projeto-copiado](https://github.com/joaosouza73/aula-03-projeto-copiado) |
 
 ## Funcionalidades das quatro versões Ritmo
 
@@ -65,4 +65,4 @@ A pasta `projeto-05-copia` contém uma cópia do [react-todo-app de katarighe](h
 
 ## Publicação e histórico
 
-O repositório da disciplina mantém as cinco entregas nesta pasta da Aula 03. O enunciado também pede que cada projeto tenha seu próprio repositório GitHub; depois de criar esses repositórios, registre aqui os links correspondentes. A cópia pública mantém a atribuição e os termos da licença do projeto original.
+O repositório da disciplina mantém as cinco entregas nesta pasta da Aula 03; cada uma também foi publicada no repositório GitHub indicado na tabela. A cópia pública mantém a atribuição e os termos da licença do projeto original.

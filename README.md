@@ -27,11 +27,11 @@ Jogo da velha desenvolvido com React e Vite.
 Agenda acadêmica Ritmo implementada em React, Vue, Angular e Next.js, além de uma cópia de um projeto público.
 
 - [Guia da atividade e comparação](./aula-03/README.md)
-- [React](./aula-03/react-agenda/)
-- [Vue](./aula-03/vue-agenda/)
-- [Angular](./aula-03/angular-agenda/)
-- [Next.js](./aula-03/next-agenda/)
-- [Projeto público copiado e origem](./aula-03/projeto-05-copia/ORIGEM.md)
+- [Projeto React](https://github.com/joaosouza73/aula-03-react) · [arquivos no repositório da disciplina](./aula-03/react-agenda/)
+- [Projeto Vue](https://github.com/joaosouza73/aula-03-vue) · [arquivos no repositório da disciplina](./aula-03/vue-agenda/)
+- [Projeto Angular](https://github.com/joaosouza73/aula-03-angular) · [arquivos no repositório da disciplina](./aula-03/angular-agenda/)
+- [Projeto Next.js](https://github.com/joaosouza73/aula-03-nextjs) · [arquivos no repositório da disciplina](./aula-03/next-agenda/)
+- [Projeto copiado](https://github.com/joaosouza73/aula-03-projeto-copiado) · [origem e licença](./aula-03/projeto-05-copia/ORIGEM.md)
 
 ### Aula 04 — Consumindo APIs no Front-end
 
