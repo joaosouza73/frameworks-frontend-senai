@@ -22,9 +22,16 @@ Jogo da velha desenvolvido com React e Vite.
 - [Relatório técnico](./aula-02/relatorio-tecnico-react.docx)
 - [Aplicação publicada](https://jogo-da-velha-react-one.vercel.app/)
 
-### Aula 03
+### Aula 03 — Projetos com Frameworks Front-end
 
-Atividade ainda sem arquivos neste repositório.
+Agenda acadêmica Ritmo implementada em React, Vue, Angular e Next.js, além de uma cópia de um projeto público.
+
+- [Guia da atividade e comparação](./aula-03/README.md)
+- [React](./aula-03/react-agenda/)
+- [Vue](./aula-03/vue-agenda/)
+- [Angular](./aula-03/angular-agenda/)
+- [Next.js](./aula-03/next-agenda/)
+- [Projeto público copiado e origem](./aula-03/projeto-05-copia/ORIGEM.md)
 
 ### Aula 04 — Consumindo APIs no Front-end
 
@@ -91,6 +98,7 @@ frameworks-frontend-senai/
 ├── README.md
 ├── aula-01/          # Controle financeiro com JavaScript
 ├── aula-02/          # Jogo da velha com React
+├── aula-03/          # Agenda acadêmica em quatro tecnologias e cópia pública
 ├── aula-04/          # API Express e interface consumidora
 ├── aula-05/          # API de notas, front-end e coleção Postman
 ├── aula-06/          # Plano, backlog, Sprints e fluxo Kanban
