@@ -1,0 +1,6 @@
+<form class="task-form" (submit)="submit($event)">
+  <label class="field field-wide"><span>O que precisa fazer?</span><input name="title" placeholder="Ex.: revisar os componentes React" maxlength="100" required /></label>
+  <label class="field"><span>Disciplina</span><input name="subject" placeholder="Ex.: Front-end" maxlength="40" /></label>
+  <label class="field"><span>Prazo</span><input name="dueDate" type="date" /></label>
+  <button class="add-button" type="submit">Adicionar atividade <span aria-hidden="true">+</span></button>
+</form>

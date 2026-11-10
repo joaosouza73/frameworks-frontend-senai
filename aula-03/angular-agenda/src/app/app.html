@@ -1,0 +1,22 @@
+<main class="page-shell">
+  <header class="topbar"><a class="wordmark" href="#inicio"><span class="brand-icon">r</span> ritmo<span class="wordmark-dot">.</span></a><span class="topbar-note">Seu semestre, no seu ritmo.</span></header>
+  <section class="intro" id="inicio">
+    <div><p class="eyebrow">AGENDA ACADÊMICA</p><h1>Um passo de cada vez<span>.</span></h1><p class="intro-copy">Reúna entregas, aulas e ideias. O que importa hoje fica mais fácil de enxergar.</p></div>
+    <div class="date-card"><span>ATIVIDADES ABERTAS</span><strong>{{ openCount().toString().padStart(2, '0') }}</strong><small>{{ completedCount() }} concluída{{ completedCount() === 1 ? '' : 's' }}</small></div>
+  </section>
+  <section class="panel" aria-labelledby="new-task-title">
+    <div class="section-title"><div><p class="eyebrow">PLANEJAMENTO</p><h2 id="new-task-title">Adicionar atividade</h2></div><span class="section-number">01</span></div>
+    <app-task-form (add)="addTask($event)" />
+  </section>
+  <section class="task-section" aria-labelledby="task-list-title">
+    <div class="task-heading"><div><p class="eyebrow">SUA ROTINA</p><h2 id="task-list-title">Lista de atividades <span>({{ visibleTasks().length }})</span></h2></div>
+      <div class="filter-tabs" role="group" aria-label="Filtrar atividades">
+        @for (item of filters; track item.id) {
+          <button type="button" [class.active]="filter() === item.id" [attr.aria-pressed]="filter() === item.id" (click)="setFilter(item.id)">{{ item.label }}</button>
+        }
+      </div>
+    </div>
+    <app-task-list [tasks]="visibleTasks()" (toggle)="toggleTask($event)" (remove)="deleteTask($event)" />
+  </section>
+  <footer class="footer"><span>Ritmo · organização acadêmica</span><span>Seus dados ficam salvos neste navegador.</span></footer>
+</main>

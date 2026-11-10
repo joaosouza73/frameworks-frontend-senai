@@ -1,0 +1,15 @@
+@if (tasks.length) {
+  <ul class="task-list">
+    @for (task of tasks; track task.id) {
+      <li class="task-item" [class.is-done]="task.done">
+        <button class="check-button" type="button" [attr.aria-label]="(task.done ? 'Reabrir: ' : 'Concluir: ') + task.title" [attr.aria-pressed]="task.done" (click)="toggle.emit(task.id)">
+          @if (task.done) { <span aria-hidden="true">✓</span> }
+        </button>
+        <div class="task-copy"><strong>{{ task.title }}</strong><span>{{ task.subject || 'Sem disciplina' }} <i aria-hidden="true">·</i> {{ formatDueDate(task.dueDate) }}</span></div>
+        <button class="delete-button" type="button" [attr.aria-label]="'Excluir: ' + task.title" (click)="remove.emit(task.id)">Excluir</button>
+      </li>
+    }
+  </ul>
+} @else {
+  <div class="empty-state"><span aria-hidden="true">✳</span><strong>Nenhuma atividade por aqui</strong><p>Adicione uma tarefa ou escolha outro filtro.</p></div>
+}
